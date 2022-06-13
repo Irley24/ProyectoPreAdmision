@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trivia Millonaria</title>
+</head>
+
+<body>
+    
+    <div class="inicio" id="inicio">
+        <h1>Trivia Millonaria</h1>
+        <h1>¡Bienvenidos al juego mas esperado de la historia!</h1>
+        <p>Escribe tu nombre para comenzar.</p>
+        <input type="text" id="nombre">
+        <input type="button" value="¡Comenzar!" id="comenzar" onclick="comenzar()" class="botonGeneral">
+    </div>
+    <div id="game">
+        <div class="inicio">
+            <h1>¿Quién quiere ser millonario?</h1>
+
+            <h2>¡La trivia más querida por todos los latinos!</h2>
+
+            <h2 id="jugador"></h2>
+
+            <p>Lee atentamente y responde las preguntas formuladas, recuerda que si respondes correctamente obtendras
+                muchos puntos!!!</p>
+        </div>
+        <section class="preguntas">
+            <div id="contenedor-categorias">
+                <h3>Elige una categoria</h3>
+                <div class="categorias">
+                    <div>
+                        <label for="categoriaCine">Cine</label><input type="radio" value="cine" id="categoriaCine" />
+                    </div>
+                    <div>
+                        <label for="categoriaGeografia">Geografia</label><input type="radio" value="geografia"
+                            id="categoriaGeografia" />
+                    </div>
+                </div>
+            </div>
+            <h3 id="categoria-actual"></h3>
+            <div id="resultado">
+                <h2 id="puntaje"></h2>
+                <input type="button" value="Volver a Jugar" id="volver" class="botonGeneral" onclick="volverAJugar()">
+            </div>
+            <div id="trivia">
+                <h2 id="pregunta"></h2>
+                <div class="opciones">
+                    <div>
+                        <label for="option-one" id="label-option-one"></label><input type="radio" id="option-one" />
+                    </div>
+                    <div>
+                        <label for="option-two" id="label-option-two"></label><input type="radio" id="option-two" />
+                    </div>
+                    <div>
+                        <label for="option-three" id="label-option-three"></label><input type="radio"
+                            id="option-three" />
+                    </div>
+                </div>
+                <input type="button" value="Enviar" id="enviar" class="botonGeneral">
+            </div>
+
+
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

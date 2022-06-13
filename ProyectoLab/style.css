@@ -1,0 +1,68 @@
+*{
+    font-family: 'BIZ UDPGothic', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  margin:0;
+  padding:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #82E0AA;
+  color: #0E6655;
+}
+
+.inicio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+  height: 100px;
+}
+
+.preguntas{
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.botonGeneral{
+  margin-top: 10px;
+  width: 100px; 
+  background-color: #0E6655;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.categorias{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  margin-top: 10px;
+
+}
+
+.opciones{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  margin-top: 10px;
+  height: 100px;
+}
+
+
