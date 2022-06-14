@@ -1,44 +1,4 @@
-let preguntasCine = [
-  {
-    pregunta: "¿En qué año se estreno Matrix?",
-    opcion1: "1997",
-    opcion2: "1999",
-    opcion3: "2002",
-    opcionCorrecta: "1999",
-    resuelto: false,
-    puntos: 5,
-  },
-  {
-    pregunta: "¿Que actor dio vida a Harry Potter en toda la saga?",
-    opcion1: "Elijah Wood",
-    opcion2: "Robert Pattinson",
-    opcion3: "Daniel Radcliffe",
-    opcionCorrecta: "Daniel Radcliffe",
-    resuelto: false,
-    puntos: 5,
-  },
-];
-
-let preguntasGeografia = [
-  {
-    pregunta: "¿Cual es la capital de Brasil?",
-    opcion1: "Sao Paulo",
-    opcion2: "Rio de Janeiro",
-    opcion3: "Brasilia",
-    opcionCorrecta: "Brasilia",
-    resuelto: false,
-    puntos: 5,
-  },
-  {
-    pregunta: "¿En que continente queda Ucrania?",
-    opcion1: "Asia",
-    opcion2: "Europa",
-    opcion3: "Africa",
-    opcionCorrecta: "Europa",
-    resuelto: false,
-    puntos: 5,
-  },
-];
+import {preguntasCine,preguntasGeografia} from './preguntas.js'
 
 let radioOne = document.getElementById("option-one");
 let radioTwo = document.getElementById("option-two");
@@ -84,6 +44,8 @@ enviar.addEventListener("click", () => {
   }
 });
 
+document.getElementById('comenzar').addEventListener('click', ()=>comenzar())
+
 //verifica que haya un nombre escrito y si es asi, comienza el juego, al iniciar esconde los demas elementos de la pagina
 function comenzar() {
   let nombre = document.getElementById("nombre").value;
@@ -93,9 +55,11 @@ function comenzar() {
     player = nombre;
     document.getElementById("jugador").innerHTML = "Bienvenida, " + nombre;
     document.getElementById("inicio").style.display = "none";
-    document.getElementById("game").style.display = "block";
+    document.getElementById("game").style.display = "flex";
   }
 }
+
+document.getElementById('volver').addEventListener('click', ()=>volverAJugar())
 //recargar pagina para volver a jugar
 function volverAJugar() {
   window.location.reload();
@@ -214,7 +178,7 @@ const seleccionarCategoria = (e) => {
     cargarPreguntaGeografia();
   }
 
-  document.getElementById("trivia").style.display = "block";
+  document.getElementById("trivia").style.display = "flex";
 };
 
 let radioCine = document.getElementById("categoriaCine");
