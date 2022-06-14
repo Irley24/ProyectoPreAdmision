@@ -9,6 +9,7 @@ let categoria = "";
 let puntos = 0;
 let preguntaActual = "";
 let player = "";
+let puntaje = document.getElementById("puntaje-actual");
 
 //Para marcar solo una opcion de respuesta
 radioOne.addEventListener("change", (e) => {
@@ -65,28 +66,34 @@ function volverAJugar() {
   window.location.reload();
 }
 
+
 //verificar respuesta en base a la posicion en el arreglo y comparar si la posicion actual es la ultima
 function verificarRespuesta() {
+  let gameOver = false
   if (categoria == "cine") {
     if (respuesta == preguntasCine[preguntaActual].opcionCorrecta) {
       puntos = puntos + preguntasCine[preguntaActual].puntos;
+      
     } else {
       puntos = puntos - preguntasCine[preguntaActual].puntos;
+      
     }
     preguntasCine[preguntaActual].resuelto = true;
     if (preguntaActual != preguntasCine.length - 1) {
       cargarPreguntaCine();
+     
     } else {
       document.getElementById("trivia").style.display = "none";
       document.getElementById("resultado").style.display = "block";
-      document.getElementById("puntaje").innerHTML =
-        "Tus puntos son: " + puntos;
+      gameOver=true
     }
   } else {
     if (respuesta == preguntasGeografia[preguntaActual].opcionCorrecta) {
       puntos = puntos + preguntasGeografia[preguntaActual].puntos;
+      
     } else {
       puntos = puntos - preguntasGeografia[preguntaActual].puntos;
+      
     }
     preguntasGeografia[preguntaActual].resuelto = true;
     if (preguntaActual != preguntasGeografia.length - 1) {
@@ -94,10 +101,15 @@ function verificarRespuesta() {
     } else {
       document.getElementById("trivia").style.display = "none";
       document.getElementById("resultado").style.display = "block";
-      document.getElementById("puntaje").innerHTML =
-        "Tus puntos son: " + puntos;
+      gameOver=true
     }
   }
+  mostrarPuntaje(gameOver);
+}
+
+function mostrarPuntaje(gameOver=false) {
+      document.getElementById("puntaje-actual").innerHTML = (gameOver?"Ganaste ":"Tienes: ") + puntos + " Puntos";
+  
 }
 
 //mostrar la pantalla principal
@@ -164,12 +176,11 @@ function cargarPreguntaGeografia() {
 }
 
 // seleccionar la categoria por medio de un evento en el radiobutton, concatenar la categoria actual y llamar la carga del arreglo de la categoria elegida.
-//al estar en la categoria elegida se esconden las de mas pantallas
+//al estar en la categoria elegida se esconden las demas pantallas
 const seleccionarCategoria = (e) => {
   categoria = e.target.value;
   document.getElementById("contenedor-categorias").style.display = "none";
-  document.getElementById("categoria-actual").innerHTML =
-    "Categoria: " + categoria.toUpperCase();
+  document.getElementById("categoria-actual").innerHTML = "Categoria: " + categoria.toUpperCase();
   if (categoria == "cine") {
     radioGeografia.checked = false;
     cargarPreguntaCine();
