@@ -7,13 +7,20 @@ Me centro en el lenguaje donde tenia mas falencias en ese momento(JavaScript) y 
  Primer boceto para idea de la pagina
  
  
+ 
+ 
 ![Captura de pantalla (200)](https://user-images.githubusercontent.com/89753707/173432115-7ad3a805-ea33-47b5-a555-01d2ddd3610a.png)}
 
 
 ![WhatsApp Image 2022-06-20 at 7 54 04 PM](https://user-images.githubusercontent.com/89753707/174694485-5ee54163-be26-4926-99cb-ea06fb9bde28.jpeg)
 
 
+
+
+
 Vistas de las primeras pantallas, la cual fue la definitiva en la entrega al equipo de Laboratoria
+
+
 
 
 ![Captura de pantalla (201)](https://user-images.githubusercontent.com/89753707/173432639-8ab27bc1-ed8f-4acb-8180-24c601a41154.png)
@@ -22,7 +29,12 @@ Vistas de las primeras pantallas, la cual fue la definitiva en la entrega al equ
 ![Captura de pantalla (204)](https://user-images.githubusercontent.com/89753707/173432648-3f7bdf5c-fc0c-42af-a502-93bdbab57a5b.png)
 
 
+
+
+
 Asi va hasta el 20 de Junio
+
+
 
 ![Captura de pantalla (211)](https://user-images.githubusercontent.com/89753707/174694653-343d89b6-c8ee-4810-bfe8-341316cd58df.png)
 ![Captura de pantalla (212)](https://user-images.githubusercontent.com/89753707/174694667-b4597dd2-7b82-49d0-9170-55bf3cc2500e.png)
