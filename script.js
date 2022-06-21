@@ -82,8 +82,10 @@ function buscaryActualizarPorId(id, arr) {
 //verificar respuesta en base a la posicion en el arreglo y comparar si la posicion actual es la ultima
 function verificarRespuesta() {
   let gameOver = false;
-  let correcta = respuesta == preguntaActual.opcionCorrecta
-  correcto.innerHTML = correcta ? "¡RESPUESTA CORRECTA!" : "¡RESPUESTA INCORRECTA!"
+  let correcta = respuesta == preguntaActual.opcionCorrecta;
+  correcto.innerHTML = correcta
+    ? "¡RESPUESTA CORRECTA!"
+    : "¡RESPUESTA INCORRECTA!";
   if (correcta) {
     puntos += preguntaActual.puntos;
   }
@@ -93,12 +95,10 @@ function verificarRespuesta() {
   );
 
   if (!ultima) {
-
     setTimeout(() => {
-      correcto.innerHTML = ""
+      correcto.innerHTML = "";
       cargarNuevaPregunta();
     }, 1000);
-   
   } else {
     document.getElementById("trivia").style.display = "none";
     document.getElementById("resultado").style.display = "block";
@@ -152,7 +152,7 @@ const seleccionarCategoria = (e) => {
   } else {
     radioCine.checked = false;
   }
-cargarNuevaPregunta();
+  cargarNuevaPregunta();
   document.getElementById("trivia").style.display = "flex";
 };
 
