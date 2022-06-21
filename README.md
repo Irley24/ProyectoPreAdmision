@@ -9,7 +9,7 @@ Me centro en el lenguaje donde tenia mas falencias en ese momento(JavaScript) y 
  
  
  
-![Captura de pantalla (200)](https://user-images.githubusercontent.com/89753707/173432115-7ad3a805-ea33-47b5-a555-01d2ddd3610a.png)}
+![Captura de pantalla (200)](https://user-images.githubusercontent.com/89753707/173432115-7ad3a805-ea33-47b5-a555-01d2ddd3610a.png)
 
 
 ![WhatsApp Image 2022-06-20 at 7 54 04 PM](https://user-images.githubusercontent.com/89753707/174694485-5ee54163-be26-4926-99cb-ea06fb9bde28.jpeg)
