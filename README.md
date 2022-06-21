@@ -1,4 +1,4 @@
-# ProyectoTrivia
+# Proyecto Trivia
 
 Este proyecto fue realizado para la pre-admision a la que me postule en el mes de mayo en Laboratoria, el cual consiste en una trivia sencilla con preguntas de 2 categorias
 
