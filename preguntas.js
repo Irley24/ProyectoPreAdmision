@@ -7,6 +7,7 @@ export let preguntasCine = [
     opcionCorrecta: "1999",
     resuelto: false,
     puntos: 5,
+    id: "pc1",
   },
   {
     pregunta: "¿Que actor dio vida a Harry Potter en toda la saga?",
@@ -16,6 +17,7 @@ export let preguntasCine = [
     opcionCorrecta: "Daniel Radcliffe",
     resuelto: false,
     puntos: 5,
+    id: "pc2",
   },
   {
     pregunta: "¿Quién era Jay-Jay?",
@@ -25,6 +27,7 @@ export let preguntasCine = [
     opcionCorrecta: "Un Avion",
     resuelto: false,
     puntos: 5,
+    id: "pc3",
   },
   {
     pregunta: "¿Qué fruta es la casa de Bob Esponja?",
@@ -34,6 +37,7 @@ export let preguntasCine = [
     opcionCorrecta: "Una Piña",
     resuelto: false,
     puntos: 5,
+    id: "pc4",
   },
   {
     pregunta: "¿Cuál fue la primera película de Disney?",
@@ -43,6 +47,7 @@ export let preguntasCine = [
     opcionCorrecta: "Blancanieves",
     resuelto: false,
     puntos: 5,
+    id: "pc5",
   },
   {
     pregunta:
@@ -53,6 +58,7 @@ export let preguntasCine = [
     opcionCorrecta: "Sebastían",
     resuelto: false,
     puntos: 5,
+    id: "pc6",
   },
   {
     pregunta: "¿En qué año se estrenó la película de Disney ''Pinocho''?",
@@ -62,6 +68,7 @@ export let preguntasCine = [
     opcionCorrecta: "1940",
     resuelto: false,
     puntos: 5,
+    id: "pc7",
   },
   {
     pregunta: "¿Qué tortuga llevaba el pañuelo azul en ''Las tortugas ninja''?",
@@ -71,6 +78,7 @@ export let preguntasCine = [
     opcionCorrecta: "Leonardo",
     resuelto: false,
     puntos: 5,
+    id: "pc8",
   },
   {
     pregunta: "¿Cómo se llama la hija de Bella Swan en la Saga Crepúsculo?",
@@ -80,6 +88,7 @@ export let preguntasCine = [
     opcionCorrecta: "Renesmee",
     resuelto: false,
     puntos: 5,
+    id: "pc9",
   },
   {
     pregunta: "¿De cuántas partes se compone la saga de ''El Padrino''?",
@@ -89,6 +98,7 @@ export let preguntasCine = [
     opcionCorrecta: "3",
     resuelto: false,
     puntos: 5,
+    id: "pc10",
   },
   {
     pregunta: "¿De qué color era Clifford, el perro gigante?",
@@ -98,6 +108,7 @@ export let preguntasCine = [
     opcionCorrecta: "Rojo",
     resuelto: false,
     puntos: 5,
+    id: "pc11",
   },
   {
     pregunta: "¿Cómo se llama el primer hijo de Goku de Dragon Ball?",
@@ -107,6 +118,7 @@ export let preguntasCine = [
     opcionCorrecta: "Gohan",
     resuelto: false,
     puntos: 5,
+    id: "pc12",
   },
 ];
 
@@ -119,6 +131,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "Brasilia",
     resuelto: false,
     puntos: 5,
+    id: "pg1",
   },
   {
     pregunta: "¿En que continente queda Ucrania?",
@@ -128,6 +141,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "Europa",
     resuelto: false,
     puntos: 5,
+    id: "pg2",
   },
   {
     pregunta: "¿Cuál es el área urbana más poblada de la India?",
@@ -137,6 +151,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "Bombay",
     resuelto: false,
     puntos: 5,
+    id: "pg3",
   },
   {
     pregunta: "¿A qué isla pertenece la ciudad de Honolulu?",
@@ -146,6 +161,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "Hawaii",
     resuelto: false,
     puntos: 5,
+    id: "pg4",
   },
   {
     pregunta: "¿En qué país es típico el flamenco?",
@@ -155,6 +171,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "España",
     resuelto: false,
     puntos: 5,
+    id: "pg5",
   },
   {
     pregunta: "¿Cuántas estrellas tiene la bandera de China?",
@@ -164,6 +181,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "5",
     resuelto: false,
     puntos: 5,
+    id: "pg6",
   },
   {
     pregunta: "¿De qué continente es originario el cacao?",
@@ -173,6 +191,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "América",
     resuelto: false,
     puntos: 5,
+    id: "pg7",
   },
   {
     pregunta: "¿Cuáles son los colores de la bandera de Panamá?",
@@ -182,6 +201,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "Rojo, azul y blanco",
     resuelto: false,
     puntos: 5,
+    id: "pg8",
   },
   {
     pregunta:
@@ -192,6 +212,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "Mar Caribe",
     resuelto: false,
     puntos: 5,
+    id: "pg9",
   },
   {
     pregunta: "¿En qué país se ubica el desierto de Atacama?",
@@ -201,6 +222,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "Chile",
     resuelto: false,
     puntos: 5,
+    id: "pg10",
   },
   {
     pregunta: "¿Cuál es el río más caudaloso del mundo?",
@@ -210,6 +232,7 @@ export let preguntasGeografia = [
     opcionCorrecta: "",
     resuelto: false,
     puntos: 5,
+    id: "pg11",
   },
   {
     pregunta: "¿De qué país el panda es el animal nacional?",
@@ -219,5 +242,6 @@ export let preguntasGeografia = [
     opcionCorrecta: "China",
     resuelto: false,
     puntos: 5,
+    id: "pg12",
   },
 ];
