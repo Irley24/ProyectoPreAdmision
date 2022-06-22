@@ -12,6 +12,8 @@ let ultima = false;
 let player = "";
 let puntaje = document.getElementById("puntaje-actual");
 let correcto = document.getElementById("correcto");
+let imageIcon = document.getElementById("imageIcon")
+document.getElementById("imageIcon").style.display = "none";
 
 //Para marcar solo una opcion de respuesta
 radioOne.addEventListener("change", (e) => {
@@ -84,8 +86,11 @@ function verificarRespuesta() {
   let gameOver = false;
   let correcta = respuesta == preguntaActual.opcionCorrecta;
   correcto.innerHTML = correcta
-    ? "¡RESPUESTA CORRECTA!"
+    ? "¡RESPUESTA CORRECTA!" 
     : "¡RESPUESTA INCORRECTA!";
+    document.getElementById("imageIcon").style.display = "block";
+    imageIcon.src = correcta ? './public/correct.png' : './public/incorrect.png'
+    
   if (correcta) {
     puntos += preguntaActual.puntos;
   }
@@ -97,6 +102,7 @@ function verificarRespuesta() {
   if (!ultima) {
     setTimeout(() => {
       correcto.innerHTML = "";
+      imageIcon.src = "";
       cargarNuevaPregunta();
     }, 1000);
   } else {

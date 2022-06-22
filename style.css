@@ -58,6 +58,13 @@ body{
 
 }
 
+.imageIcon{
+    height: 4rem;
+    width: 4rem;
+    border: none;
+    margin: 0.5rem;
+}
+
 .opciones{
   display: flex;
   flex-direction:column;
