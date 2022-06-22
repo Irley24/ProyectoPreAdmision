@@ -104,6 +104,7 @@ function verificarRespuesta() {
       correcto.innerHTML = "";
       imageIcon.src = "";
       cargarNuevaPregunta();
+      document.getElementById("imageIcon").style.display = "none";
     }, 1000);
   } else {
     document.getElementById("trivia").style.display = "none";
